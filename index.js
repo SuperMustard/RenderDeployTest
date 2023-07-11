@@ -4,6 +4,8 @@ const cors = require('cors')
 
 app.use(cors())
 
+app.use(express.static('build'))
+
 app.use(express.json())
 
 let notes = [
@@ -23,7 +25,7 @@ let notes = [
       important: true
     },
     {
-      id:3 ,
+      id:4 ,
       content: "Stella is my goddess",
       important: true
     }
